@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e2e0f0;
+}
+
+.header{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color : white;
+    border-bottom: 1px solid #e2eBf0;
+}
+
+.navbar {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    font-size: 24px;
+    font-weight: bold;
+    color: #172554;
+    text-decoration: none;
+}
+
+.logo span{
+    color: rgb(68, 96, 238);
+}
+
+.nav-menu{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    list-style: none;
+}
+
+.nav-link{
+    color: #4755b9;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav-link:hover{
+    color: rgb(68, 96, 238);
+}
+
+/* style css */
+.home{
+    min-height: 85vh;
+    padding: 80px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(
+        135deg, #eff6ff, #ffffff
+    );
+}
+
+.home-content{
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+}
+
+.home h1{
+    color: #2563eb;
+    font-size: clamp(20px, 7vw, 70px);
+    margin-bottom: 15px;
+}
+
+.home h1 span{
+    color: rgb(68, 96, 238);
+}
+
+.home h2{
+    color: rgb(49, 62, 116);
+    font-size: clamp(18px, 3vw, 25px);
+    margin-bottom: 20px;
+}
+
+.home-buttons{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-primary{
+    color: white;
+    background-color: #2563eb;
+}
+
+.btn-primary:hover{
+    background-color: #1d4ed8;
+}
+
+.btn-outline{
+    color: #2563eb;
+    border: 1px  solid #2563eb;
+}
+
+.btn-outline:hover{
+    color: white;
+    background-color: #2563eb;
+}
+
+/* about */
+.section{
+    padding: 80px 0;
+}
+
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section-title{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.pembungkus-about{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.about-gambar{
+    flex: 1;
+    min-width: 260px;
+    text-align: center;
+}
+.about-gambar img{
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.isi-about{
+    flex: 1.5;
+    min-width: 300px;
+}
+
+.isi-about h3{
+    font-size: 24px;
+    color: #172554;
+    margin-bottom: 15px;
+}
+
+.detail-about{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid grey;
+}
+
+.detail-item strong{
+    color: #172554;
+}
